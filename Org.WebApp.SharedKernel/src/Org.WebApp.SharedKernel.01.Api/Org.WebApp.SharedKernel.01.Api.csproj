@@ -2,12 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>_01.Org.WebApp.SharedKernel.Api</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Org.WebApp.Main.Domain\Org.WebApp.Main.Domain.csproj" />
+    <ProjectReference Include="..\Org.WebApp.SharedKernel.06.Infrastructure\Org.WebApp.SharedKernel.06.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Org.WebApp.Main.EFCore\Org.WebApp.Main.EFCore.csproj" />
-    <ProjectReference Include="..\Org.WebApp.Main.UseCases\Org.WebApp.Main.UseCases.csproj" />
+    <ProjectReference Include="..\Org.WebApp.SharedKernel.02.UseCases\Org.WebApp.SharedKernel.02.UseCases.csproj" />
+    <ProjectReference Include="..\Org.WebApp.SharedKernel.07.EFCore\Org.WebApp.SharedKernel.07.EFCore.csproj" />
   </ItemGroup>
 
 </Project>

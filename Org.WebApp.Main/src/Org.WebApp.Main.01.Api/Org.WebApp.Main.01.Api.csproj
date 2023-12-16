@@ -20,7 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Org.WebApp.Main.Infrastructure\Org.WebApp.Main.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\Org.WebApp.SharedKernel\src\Org.WebApp.SharedKernel.01.Api\Org.WebApp.SharedKernel.01.Api.csproj" />
+    <ProjectReference Include="..\Org.WebApp.Main.06.Infrastructure\Org.WebApp.Main.06.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

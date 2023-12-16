@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Org.WebApp.Main.Contract\Org.WebApp.Main.Contract.csproj" />
-    <ProjectReference Include="..\Org.WebApp.Main.Domain\Org.WebApp.Main.Domain.csproj" />
+    <ProjectReference Include="..\Org.WebApp.SharedKernel.05.Domain\Org.WebApp.SharedKernel.05.Domain.csproj" />
   </ItemGroup>
 
 </Project>
