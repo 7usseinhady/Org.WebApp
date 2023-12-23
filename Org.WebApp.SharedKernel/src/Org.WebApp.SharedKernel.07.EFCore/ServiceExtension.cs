@@ -1,4 +1,4 @@
-﻿namespace Org.WebApp.SharedKernel.07.EFCore;
+﻿namespace Org.WebApp.SharedKernel;
 
 public class ServiceExtension
 {

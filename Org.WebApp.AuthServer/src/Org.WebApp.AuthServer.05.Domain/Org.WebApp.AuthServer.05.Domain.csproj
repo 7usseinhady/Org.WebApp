@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<RootNamespace>Org.WebApp.AuthServer</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Org.WebApp.SharedKernel\src\Org.WebApp.SharedKernel.05.Domain\Org.WebApp.SharedKernel.05.Domain.csproj" />
+    <ProjectReference Include="..\Org.WebApp.AuthServer.04.Shared\Org.WebApp.AuthServer.04.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
