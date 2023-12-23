@@ -9,17 +9,17 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Org.WebApp.Main/src/Org.WebApp.Main.Api/Org.WebApp.Main.Api.csproj", "Org.WebApp.Main/src/Org.WebApp.Main.Api/"]
-RUN dotnet restore "./Org.WebApp.Main/src/Org.WebApp.Main.Api/./Org.WebApp.Main.Api.csproj"
+COPY ["Org.WebApp.Main/src/Org.WebApp.Main.01.Api/Org.WebApp.Main.01.Api.csproj", "Org.WebApp.Main/src/Org.WebApp.Main.01.Api/"]
+RUN dotnet restore "./Org.WebApp.Main/src/Org.WebApp.Main.01.Api/Org.WebApp.Main.01.Api.csproj"
 COPY . .
-WORKDIR "/src/Org.WebApp.Main/src/Org.WebApp.Main.Api"
-RUN dotnet build "./Org.WebApp.Main.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/Org.WebApp.Main/src/Org.WebApp.Main.01.Api"
+RUN dotnet build "./Org.WebApp.Main.01.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./Org.WebApp.Main.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Org.WebApp.Main.01.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Org.WebApp.Main.Api.dll"]
+ENTRYPOINT ["dotnet", "Org.WebApp.Main.01.Api.dll"]
