@@ -5,6 +5,7 @@
     <RootNamespace>_01.Org.WebApp.SharedKernel.Api</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<RootNamespace>Org.WebApp.SharedKernel</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

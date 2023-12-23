@@ -8,6 +8,7 @@
     <UserSecretsId>998c2c20-5bea-4c21-a1e2-93536429378a</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..\..</DockerfileContext>
+    <RootNamespace>Org.WebApp.Main</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
